@@ -33,7 +33,7 @@ function checkInputs() {
     if (senhaValue === "") {
         setErrorFor(senha, "A senha é obrigatória.");
     } else if (senhaValue.length < 8) {
-        setSuccessFor(senha, "A senha tem que ter no mínimo 7caracteres.");
+        setSuccessFor(senha, "A senha tem que ter no mínimo 8 caracteres.");
     } else {
         setSuccessFor(senha);
     }
@@ -72,6 +72,6 @@ function setSuccessFor(input) {
     formControl.className = "form-control success";
 }
 
-function checkEmail (email) {
-   return  / ^ ( ( [ ^<>() \[ \] \\ .,;: \s @" ] + ( \. [ ^<>() \[ \] \\ .,;: \s @" ] + ) * ) | ( ". + " ) ) @ ( ( \[ [ 0-9 ] { 1,3 } \. [ 0-9 ] { 1,3 } \. [ 0-9 ]{ 1,3 } \. [ 0-9 ] { 1,3 } ] ) | ( ( [ a-zA-Z \- 0-9 ] + \. ) + [ a-zA-Z ] { 2, } ) ) $ / .teste(email);
+function checkEmail(email) {
+   return / ^ (([ ^<>()\[\]\\ .,;: \s @"] + (\.[ ^<>()\[ \] \\ .,;: \s @"]+ )*) | ( ". + " )) @ ((\[ [ 0-9 ] { 1,3 } \. [ 0-9 ] { 1,3 } \. [ 0-9 ]{ 1,3 } \. [ 0-9 ] { 1,3 } ] ) | ( ( [ a-zA-Z \- 0-9 ] + \. ) + [ a-zA-Z ] { 2, } ) ) $ / .teste(email);
 }
