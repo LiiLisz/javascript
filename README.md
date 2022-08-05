@@ -1,5 +1,5 @@
 # javascript
- Projeto JavaScript
+ Projeto em JavaScript
 
 Algumas experiências...
 
