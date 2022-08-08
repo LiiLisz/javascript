@@ -14,7 +14,7 @@ body, html {
 span {
     padding: 5px;
     border-radius: 2px 1px solid black;
-    font-size: 2.1em;
+    font-size: 2.5em;
 }
 
 p {
@@ -30,17 +30,20 @@ p {
 }
 
 #reset {
-    background-color: darkgrey;
+    background-color: rgba(169, 169, 169, 0.904);
 }
 
 button {
-    border-radius: 2px 1px solid rgba(0, 0, 0, 0.884);
-    padding: 12px;
+    color: rgba(255, 255, 255, 0.856);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 11px;
     margin: 3px;
-    width: 100px;
+    width: 120px;
     cursor: pointer;
 }
 
 button:hover {
-    text-transform: uppercase;
+    text-decoration: underline;
 }
