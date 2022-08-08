@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body, html {
+    background-color: tan;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 100px;
+}
+
+span {
+    padding: 5px;
+    border-radius: 2px 1px solid black;
+    font-size: 2.1em;
+}
+
+p {
+    padding: 40px;
+}
+
+#start {
+    background-color: darkgreen;
+}
+
+#stop {
+    background-color: red;
+}
+
+#reset {
+    background-color: darkgrey;
+}
+
+button {
+    border-radius: 2px 1px solid rgba(0, 0, 0, 0.884);
+    padding: 10px;
+    margin: 3px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-transform: uppercase;
+}
