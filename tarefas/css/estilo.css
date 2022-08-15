@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #2b2a2a;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: white;
+    outline: none;
+    font-size: 1.2em;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: white;
+    outline: none;
+}
+
+.topo button:hover {
+    background: #3c3a3a;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: #191818;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btnAcao {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    margin-right: 8px;
+    width: 38px;
+    height: 35px;
+    cursor: pointer;
+    background: #2b2a2a;
+    color: white;
+}
+
+.btnAcao:hover {
+    background: #3c3a3a;
+}
