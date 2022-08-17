@@ -11,3 +11,6 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/card/card.html">Site Card</a>
 
+<a href="https://liarasampaio.github.io/javascript/tarefa/lista.html">Lista de Tarefas</a>
+
+
