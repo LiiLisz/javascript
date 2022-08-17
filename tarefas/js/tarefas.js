@@ -1,68 +1,62 @@
-let tarefa = document.getElementById('tarefa');
-let btnAddTarefa = document.getElementById('btnAddTarefa');
-let listaTarefas = document.getElementById('listaTarefas');
+let contador = 0;
+let input = document.getElementById('inputTarefa');
+let btnAdd = document.getElementById('btn-add');
+let main = document.getElementById('areaLista');
 
-tarefa.addEventListener('keypress', (e) => {
-    if(e.KeyCode == 13) {
-        let novaTarefa = {
-            nome: tarefa.value, 
-            id: gerarId(),
-        }
+function addTarefa() {
+    let valorInput = input.value;
+
+    if ((valorInput !== "") && (valorInput !== null) && (valorInput !== undefined)) {
+        ++contador;
+
+        let novoItem = `<div id="${contador}" class="item">
+        <div onclick="marcarTarefa(${contador})" class="item-icone">
+            <i id="icone_${contador}" class="mdi mdi-circle-outline"></i>
+        </div>
+        <div onclick="marcarTarefa(${contador})" class="item-nome">
+            ${valorInput}
+        </div>
+        <div class="item-botao">
+            <button onclick="deletar(${contador})" class="delete"><i class="mdi mdi-delete"></i> Deletar</button>
+        </div>
+        </div>`;
+        main.innerHTML += novoItem;
+
+        input.value = ""; /* PARA LIMPAR O CAMPO */
+        input.focus();
     }
-    adicionarTarefa(novaTarefa);
-});
+}
 
-btnAddTarefa.addEventListener('click', () => {
-    
-    let novaTarefa = {
-        nome: tarefa.value, 
-        id: gerarId(),
+function deletar(id) {
+    var tarefa = document.getElementById(id);
+    tarefa.remove();
+}
+
+function marcarTarefa(id) {
+    var item = document.getElementById(id);
+    var classe = item.getAttribute('class');
+
+    if (classe == "item") {
+        item.classList.add('clicado');
+
+        var icone = document.getElementById('icone_'+id);
+        icone.classList.remove('mdi-circle-outline');
+        icone.classList.add('mdi-check-circle');
+
+        item.parentNode.appendChild(item);
+        
+    } else {
+        item.classList.remove('clicado');
+
+        var icone = document.getElementById('icone_'+id);
+        icone.classList.remove('mdi-check-circle');
+        icone.classList.add('mdi-circle-outline');
     }
-    adicionarTarefa(novaTarefa);
-});
-
-function gerarId() {
-    return Math.floor(Math.random() * 3000);
 }
 
-function adicionarTarefa(novaTarefa) {
-
-    let li = criarTagLI(novaTarefa);
-    listaTarefas.appendChild(li);
-    tarefa.value = '';
-}
-
-function criarTagLI(novaTarefa) {
-    let li = document.createElement('li');
-    
-    let span = document.createElement('span');
-    span.classList.add('textoTarefa');
-    span.innerHTML = novaTarefa.nome;
-
-    let div = document.createElement('div');
-
-    let btnEditar = document.createElement('button');
-    btnEditar.classList.add('btnAcao');
-    btnEditar.innerHTML = '<i class="fa fa-pencil"></i>';
-    btnEditar.setAttribute('onclick', 'editar('+novaTarefa.id+')');
-
-    let btnExcluir = document.createElement('button');
-    btnExcluir.classList.add('btnAcao');
-    btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
-    btnExcluir.setAttribute('onclick', 'excluir('+novaTarefa.id+')');
-
-    div.appendChild(btnEditar);
-    div.appendChild(btnExcluir);
-
-    li.appendChild(span);
-    li.appendChild(div);
-    return li;
-}
-
-function editar(idTarefa) {
-    alert(idTarefa);
-}
-
-function excluir(idTarefa) {
-    alert(idTarefa);
-}
+input.addEventListener("keyup", function(event) {
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        btnAdd.click();
+    }
+})
