@@ -65,6 +65,7 @@ function setErrorFor(input, message) {
 }
 
 function setSuccessFor(input) {
+    event.preventDefault();
     const formControl = input.parentElement;
     
     formControl.className = "form-control success"

@@ -1,0 +1,51 @@
+.loguin-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.loguin_header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.loguin_header img {
+    width: 100px;
+}
+
+.loguin_header h1 {
+    color: #333;
+}
+
+.loguin_input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    height: 50px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.loguin_button {
+    background-color: #ee665c;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1em;
+    max-width: 300px;
+    width: 100%;
+}
+
+.loguin_button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
