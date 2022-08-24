@@ -11,6 +11,8 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/tarefas/lista.html">Lista de Tarefas</a>
 
+<a href="https://liarasampaio.github.io/javascript/imc/calculo.html">Calculador IMC</a>
+
 <a href="https://liarasampaio.github.io/javascript/jogo/jg.html">Jogo da Memória</a>
 
 
