@@ -1,0 +1,139 @@
+* {
+    font-family: "Montserrat", "sans-serif";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body, html {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, rgb(0, 217, 255) 0%, #04ff64cc 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url('bg-form.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: rgba(99, 233, 193, 0.521);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    word-spacing: 50rem;
+    color: white;
+}
+
+#register-form {
+    background-color: rgb(255, 255, 255);
+    padding: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#register-form p {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    margin-bottom: .6rem;
+    font-weight: bold;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0.6rem 0;
+}
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#generate-password:hover {
+    color: #0099ff;
+}
+
+#register-form #generated-password {
+    border: 1px solid aqua;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #aaa;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    color: rgb(22, 233, 85);
+    margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"] {
+    background-color: #44e0e6;
+    color: black;
+    font-weight: bold;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover {
+    opacity: 1.5;
+}
+
+#res {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+}
