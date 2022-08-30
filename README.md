@@ -15,7 +15,7 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/jogo/jg.html">Jogo da Memória</a>
 
-<a href="https://liarasampaio.github.io/javascript/criar/pagina.html">Criar Loguin</a>
+<a href="https://liarasampaio.github.io/javascript/criar/pagina.html">Criar Conta</a>
 
 <a href="https://liarasampaio.github.io/javascript/semaforo/sinal.html">Semáforo</a>
 
