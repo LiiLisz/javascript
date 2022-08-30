@@ -3,7 +3,7 @@
 
 Algumas experiências...
 
-<a href="https://liarasampaio.github.io/javascript/pagina/loguin.html">Loguin</a>
+<a href="https://liarasampaio.github.io/javascript/pagina/loguin.html">Login</a>
 
 <a href="https://liarasampaio.github.io/javascript/calculadora/calcu.html">Calculadora</a>
 
@@ -14,5 +14,9 @@ Algumas experiências...
 <a href="https://liarasampaio.github.io/javascript/imc/calculo.html">Calculador IMC</a>
 
 <a href="https://liarasampaio.github.io/javascript/jogo/jg.html">Jogo da Memória</a>
+
+<a href="https://liarasampaio.github.io/javascript/criar/pagina.html">Criar Loguin</a>
+
+<a href="https://liarasampaio.github.io/javascript/semaforo/sinal.html">Semáforo</a>
 
 
