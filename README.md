@@ -19,4 +19,8 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/semaforo/sinal.html">Semáforo</a>
 
+<a href="https://liarasampaio.github.io/javascript/dicionario/dici.html">Dicionário</a>
+
+
+
 
