@@ -6,6 +6,7 @@ let resultado = document.querySelector('#container__resultado');
 
 btnTxt.addEventListener('click', () => {
     let palavra = inputTxt.value;
+    
     if(palavra === ''){
         resultado.innerHTML = `<p id="container__significado"><span>Escreva uma palavra no campo de busca!</span></p>`
     } else {
