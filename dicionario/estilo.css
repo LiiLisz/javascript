@@ -1,127 +1,104 @@
 * {
-    font-family: Verdana, sans-serif;
-    box-sizing: border-box;
-    letter-spacing: 0px;
-    scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.display-none {
-    display: none;
-}
-  
-html, body {
-    position: relative;
-    background-color: rgba(0, 0, 255, 0.637);
-}
-
-.conteudo {
+body {
+    width: 100vw;
     height: 100vh;
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
-.conteudo .card {
-    background-color: rgba(146, 146, 245, 0.459);
-    width: 100%;
-    max-width: 500px;
-    border-radius: 5px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0.5);
-}
-
-.conteudo .card header.cabecalho {
-    background-color: white;
-    height: 27px;
-    border-radius: 5px 5px 0 0;
-}
-
-.conteudo .card main.corpo {
-    padding: 3rem 1rem;
-}
-
-.conteudo .card main.corpo form {
+#container {
+    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(233, 161, 132, 0.884);
+    background: linear-gradient(90deg, rgb(236, 125, 81) 0%, rgba(248, 84, 19, 0.493) 100%);
 }
 
-.conteudo .card main.corpo form input[type="text"] {
-    background-color: transparent;
-    border: none;
+#titulo{
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #fff;
+
+}
+
+#container__secundario {
+    width: 700px;
+    padding: 30px 50px ;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px -7px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px -7px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: 9px -7px 11px -2px rgba(0,0,0,0.75);
+}
+
+#container__input{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+    
+}
+
+#container__input::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-top: 2px solid #666666;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+#container__inputtxt{
     outline: none;
-    border-bottom: 1px solid lightgray;
-    color: white;
-    font-weight: bold;
-    width: 70%;
-}
-
-.conteudo .card main.corpo form input[type="text"]::placeholder {
-    opacity: 1;
-    color: rgba(211, 211, 211, 0.74);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.conteudo .card main.corpo form input[type="submit"] {
-    background-color: rgb(245, 250, 250);
-    color: hwb(0 32% 68%);
-    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#container__btn {
+    width: 20%;
+    outline: none;
+    border: solid 1px black;
+    background-color: #f85313;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: #ffff;
+    height: 40px;
     cursor: pointer;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.3s ease-in;
 }
 
-.conteudo .card main.corpo form input[type="submit"]:hover {
-    box-shadow: 0 0 20px #ffffff;
+#container__btn:hover{
+    background-color: #f17240;
+    color: #ffff;
+    border: solid 1px black;
 }
 
-.conteudo .card main.corpo .resultado {
-    padding: 3rem 0.5rem 1rem 0.5rem;
+#container__palavra {
+    color: #f85313;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
-.conteudo .card main.corpo .resultado .carregamento {
-    height: 50px;
-    width: 50px;
-    border: 5px solid #ffffff;
-    margin: 0 auto;
-    border-radius: 50%;
-    border-left-color: rgba(146, 146, 245, 0.459);
-    border-right-color: rgba(146, 146, 245, 0.459);
-    animation: carregamento 1s linear infinite;
+#container__significado {
+    color: black;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
-@keyframes carregamento {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.conteudo .card main.corpo .resultado h3 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.conteudo .card main.corpo .resultado span.resultado_descricao {
-    color: #ffffff;
-}
-
-@media screen and (max-width: 550px) {
-    .conteudo .card main.corpo form {
-        flex-direction: column;
-        row-gap: 20px;
-    }
-    .conteudo .card main.corpo form input[type="text"] {
-        width: 100%;
-    }
+span {
+    font-size: 20px;
+    color: #f85313;
 }

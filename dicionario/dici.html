@@ -8,28 +8,18 @@
     <title>Dicionário</title>
 </head> 
 <body>
-    <section class="conteudo">
-        <article class="card">
-            
-            <header class="cabecalho"></header>
-            
-            <main class="corpo">
-                <form class="js-fomulario">
-                    <input type="text" name="palavra" placeholder="digite a palavra" required />
-                    <input type="submit" value="Buscar"/>
-                </form>
-                
-                <section class="resultado js-resultado">
-                    <div class="carregamento js-carregamento display-none"></div>
-                    
-                    <h3 class="resultado_titulo js-resultado_titulo"></h3>
-                    
-                    <span class="resultado_descricao js-resultado_descricao"></span>
-                </section>
-            </main>
-
-        </article>
-    </section>
+    <div id="container">
+        <h2 id="titulo">Dicionário Online PT/BR</h2>
+        <div id="container__secundario">
+            <div id="container__input">
+                <input type="text" name="text" id="container__inputtxt" placeholder="Digite aqui a palavra desejada...">
+                <button id="container__btn">Buscar</button>
+            </div>
+            <div id="container__resultado">
+               
+            </div>
+        </div>
+    </div>    
 
     <script src="./dicionario.js"></script>
 </body>
