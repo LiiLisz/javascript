@@ -21,6 +21,7 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/dicionario/dici.html">Dicionário</a>
 
+<a href="https://liarasampaio.github.io/javascript/qrcode/qrcode.html">Gerador de QRCode</a>
 
 
 
