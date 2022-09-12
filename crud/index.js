@@ -14,6 +14,8 @@ function populaTabela() {
             <td>${item.Telefone}</td>
             <td>${item.Produto}</td>
             <td>${item.Valor}</td>
+            <th><button type="button" class="btn btn-primary"></button></th>
+            <th><button type="button" class="btn btn-danger"></button></th>
             </tr>`)
         })
     }
