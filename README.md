@@ -23,5 +23,5 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/qrcode/qrcode.html">Gerador de QRCode</a>
 
-
+<a href="https://liarasampaio.github.io/javascript/crud-1/crud.html">CRUD Básico</a>
 
