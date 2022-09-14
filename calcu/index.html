@@ -17,25 +17,25 @@
         </div>
         
         <div id="buttons-container">
-            <button>CE</button>
-            <button>C</button>
-            <button>DEL</button>
-            <button>/</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button>*</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button>-</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button>+</button>
-            <button class="number">0</button>
-            <button class="number">.</button>
-            <button id="equal-btn">=</button>
+            <button onclick="clean('')">CE</button>
+            <button onclick="back('')">C</button>
+            <button onclick="clean('')">DEL</button>
+            <button onclick="insert('/')">/</button>
+            <button class="number" onclick="insert('7')">7</button>
+            <button class="number" onclick="insert('8')">8</button>
+            <button class="number" onclick="insert('9')">9</button>
+            <button onclick="insert('*')">*</button>
+            <button class="number" onclick="insert('4')">4</button>
+            <button class="number" onclick="insert('5')">5</button>
+            <button class="number" onclick="insert('6')">6</button>
+            <button onclick="insert('-')">-</button>
+            <button class="number" onclick="insert('1')">1</button>
+            <button class="number" onclick="insert('2')">2</button>
+            <button class="number" onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+            <button class="number" onclick="insert('0')">0</button>
+            <button class="number" onclick="insert('.')">.</button>
+            <button id="equal-btn" onclick="calcular('')">=</button>
         </div>
 
     </div>

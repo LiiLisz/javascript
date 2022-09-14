@@ -1,37 +1,24 @@
-const previousOperationText = document.querySelector("#previous-operation");
-const currentOperationText = document.querySelector("#current-operation");
-const buttons = document.querySelectorAll("#buttons-container button");
-
-class calculator {
-    constructor(previousOperationText, currentOperationText) {
-        this.previousOperationText = previousOperationText;
-        this.currentOperationText = currentOperationText;
-        this.currentOperation = "";
-    }
-    addDigit(digit){
-        if(digit === "." && this.currentOperationText.innerText.includes(".")){
-            return;
-        }
-
-        this.currentOperation = digit;
-        this.updateScreen();
-    }
-
-    updateScreen(){
-        this.currentOperationText.innerText += this.currentOperation;
-    }
+function insert(num) {
+    var numero = document.querySelector("#previous-operation").innerHTML;
+    document.querySelector("#previous-operation").innerHTML = numero + num;
 }
 
-const calc = new calculator (previousOperationText, currentOperationText)
+function clean(){
+    document.querySelector("#previous-operation").innerHTML = "";
+    document.querySelector("#current-operation").innerHTML = "";
+}
 
-buttons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        const value = e.target.innerText;
-        
-        if(+value >= 0 || value === "."){
-            calc.addDigit(value);
-        } else {
+function back() {
+    var resultado = document.querySelector("#previous-operation").innerHTML;
+    document.querySelector("#previous-operation").innerHTML = resultado.substring(0, resultado.length -1);
+}
 
-        }
-    });
-});
+function calcular(){
+    var resultado = document.querySelector("#previous-operation").innerHTML;
+
+    if(resultado){
+        document.querySelector("#current-operation").innerHTML = eval(resultado);
+    } else{
+        document.querySelector("#current-operation").innerHTML = "Digite um número!";
+    }
+}

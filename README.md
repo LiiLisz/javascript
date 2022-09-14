@@ -5,9 +5,9 @@ Algumas experiências...
 
 <a href="https://liarasampaio.github.io/javascript/pagina/loguin.html">Login</a>
 
-<a href="https://liarasampaio.github.io/javascript/calculadora/calcu.html">Calculadora</a>
-
 <a href="https://liarasampaio.github.io/javascript/cronometro/cronometro.html">Cronômetro</a>
+
+<a href="https://liarasampaio.github.io/javascript/calcu/index.html">Calculadora</a>
 
 <a href="https://liarasampaio.github.io/javascript/tarefas/lista.html">Lista de Tarefas</a>
 
